@@ -13,6 +13,7 @@
 		0B6EC57024F0A9A6003BC5A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6EC56E24F0A9A6003BC5A8 /* Main.storyboard */; };
 		0B6EC57224F0A9A7003BC5A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B6EC57124F0A9A7003BC5A8 /* Assets.xcassets */; };
 		0B6EC57524F0A9A7003BC5A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B6EC57324F0A9A7003BC5A8 /* LaunchScreen.storyboard */; };
+		0BEF0EA324F3F9CC0027FF89 /* extentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEF0EA224F3F9CC0027FF89 /* extentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0B6EC57124F0A9A7003BC5A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B6EC57424F0A9A7003BC5A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B6EC57624F0A9A7003BC5A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BEF0EA224F3F9CC0027FF89 /* extentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				0B6EC56824F0A9A6003BC5A8 /* AppDelegate.swift */,
 				0B6EC56A24F0A9A6003BC5A8 /* SceneDelegate.swift */,
 				0B6EC56C24F0A9A6003BC5A8 /* ViewController.swift */,
+				0BEF0EA224F3F9CC0027FF89 /* extentViewController.swift */,
 				0B6EC56E24F0A9A6003BC5A8 /* Main.storyboard */,
 				0B6EC57124F0A9A7003BC5A8 /* Assets.xcassets */,
 				0B6EC57324F0A9A7003BC5A8 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BEF0EA324F3F9CC0027FF89 /* extentViewController.swift in Sources */,
 				0B6EC56D24F0A9A6003BC5A8 /* ViewController.swift in Sources */,
 				0B6EC56924F0A9A6003BC5A8 /* AppDelegate.swift in Sources */,
 				0B6EC56B24F0A9A6003BC5A8 /* SceneDelegate.swift in Sources */,
