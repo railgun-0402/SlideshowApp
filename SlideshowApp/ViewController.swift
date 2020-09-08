@@ -104,15 +104,12 @@ class ViewController: UIViewController {
     
     @IBAction func unwind(_ segue:UIStoryboardSegue) {
         //他画面からSegueを使って戻ってきた時に呼ばれる
+        //タイマーの作成・始動
+        self.timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(ViewController.onTimer(_timer:)), userInfo: nil, repeats: true)
+
+        
     }
     
-        //segueが反応していない？？
-//    @IBAction func tap(_ sender: Any) {
-//        //第1引数　遷移先のインスタンス作成
-//        //2アニメションの有無
-//        //3遷移後に呼び出したい処理
-//        self.present(extentViewController(), animated: true, completion: nil)
-//    }
     
     //segueを使用して、画像をタップすると、画面遷移させる
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -120,7 +117,15 @@ class ViewController: UIViewController {
         let image_move = segue.destination as! extentViewController
 
         image_move.showImage = self.images[imageIndex]
+        
+        //遷移する際にタイマを止める
+        self.timer.invalidate()
+        
+        //再生ボタンを再び押下した時に、sself.timer == nil を判断させる
+        self.timer = nil
+        
     }
+    
 
 }
 
